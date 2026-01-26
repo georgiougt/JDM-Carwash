@@ -7,7 +7,7 @@ import { ServiceCard } from "@/components/service-card"
 import { services } from "@/lib/services"
 
 export const metadata: Metadata = {
-    title: "Services | NeonWash",
+    title: "Services | JDM Carwash",
     description: "Explore our premium car wash and detailing services.",
 }
 

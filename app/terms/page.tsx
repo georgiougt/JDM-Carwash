@@ -1,4 +1,6 @@
 
+import { siteConfig } from "@/lib/config"
+
 export default function TermsPage() {
     return (
         <div className="container py-12 md:py-20 px-4 md:px-6 max-w-4xl mx-auto">
@@ -15,7 +17,7 @@ export default function TermsPage() {
                 <p>We require at least 24 hours notice for cancellations. Failure to do so may result in a cancellation fee.</p>
 
                 <h2 className="text-xl font-bold text-foreground">4. Liability</h2>
-                <p>While we take every precaution, NeonWash is not liable for pre-existing damage or damage caused by loose items left in the vehicle.</p>
+                <p>While we take every precaution, {siteConfig.name} is not liable for pre-existing damage or damage caused by loose items left in the vehicle.</p>
             </div>
         </div>
     )

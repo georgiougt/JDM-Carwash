@@ -180,7 +180,7 @@ export default function ContactPage() {
                                         </FormControl>
                                         <div className="space-y-1 leading-none">
                                             <FormLabel>
-                                                I consent to NeonWash processing my data to respond to my inquiry.
+                                                I consent to {siteConfig.name} processing my data to respond to my inquiry.
                                             </FormLabel>
                                             <FormMessage />
                                         </div>

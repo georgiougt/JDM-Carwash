@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/config"
 
 export const metadata: Metadata = {
-    title: "About Us | NeonWash",
+    title: "About Us | JDM Carwash",
     description: "Learn about our premium car care philosophy and team.",
 }
 
@@ -16,7 +16,7 @@ export default function AboutPage() {
             {/* Hero */}
             <div className="flex flex-col items-center text-center space-y-4 mb-16">
                 <h1 className="font-outfit text-4xl md:text-6xl font-bold uppercase text-glow">
-                    About <span className="text-primary">NeonWash</span>
+                    About <span className="text-primary">{siteConfig.name.split(" ")[0]}</span> <span className="text-white">{siteConfig.name.split(" ")[1]}</span>
                 </h1>
                 <p className="text-muted-foreground max-w-3xl text-lg">
                     We are not just a car wash. We are automotive enthusiasts dedicated to preserving the beauty and value of your vehicle.
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 <div className="space-y-6">
                     <h2 className="font-outfit text-3xl font-bold uppercase">Our Story</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                        Founded with a passion for perfection, NeonWash started as a small detailing studio in {siteConfig.location}.
+                        Founded with a passion for perfection, {siteConfig.name} started as a small detailing studio in {siteConfig.location}.
                         Our mission was simple: provide a level of care that goes beyond the standard "wash and go."
                     </p>
                     <p className="text-muted-foreground leading-relaxed">

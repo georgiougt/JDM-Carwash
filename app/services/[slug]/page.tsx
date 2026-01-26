@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props) {
     }
 
     return {
-        title: `${service.name} | NeonWash`,
+        title: `${service.name} | JDM Carwash`,
         description: service.shortDescription,
     }
 }
