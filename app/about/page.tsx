@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Metadata } from "next"
 import { CheckCircle, Users, Award, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -47,12 +48,18 @@ export default function AboutPage() {
                     </div>
                 </div>
                 <div className="aspect-square relative rounded-2xl overflow-hidden border border-border/50 bg-secondary/5">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <Sparkles className="h-32 w-32 text-white/10" />
+                    <Image
+                        src="/images/about-image.jpg"
+                        alt="State of the Art Facility"
+                        fill
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background/10 to-secondary/20" />
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        {/* Sparkles removed to show image clearly or kept subtle if needed? Keeping simpler overlay for now */}
                     </div>
-                    {/* Placeholder for Team/Shop Image */}
-                    <div className="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-black/40 backdrop-blur-md border border-white/10">
+
+                    <div className="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-black/60 backdrop-blur-md border border-white/10 z-10">
                         <p className="font-bold text-white mb-1">State of the Art Facility</p>
                         <p className="text-xs text-white/70">Equipped with the best tools in the industry</p>
                     </div>
