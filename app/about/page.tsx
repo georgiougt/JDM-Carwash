@@ -49,7 +49,7 @@ export default function AboutPage() {
                 </div>
                 <div className="aspect-square relative rounded-2xl overflow-hidden border border-border/50 bg-secondary/5">
                     <Image
-                        src="/images/about-image.jpg"
+                        src="https://images.pexels.com/photos/6873049/pexels-photo-6873049.jpeg?auto=compress&cs=tinysrgb&w=1200"
                         alt="State of the Art Facility"
                         fill
                         className="object-cover"
